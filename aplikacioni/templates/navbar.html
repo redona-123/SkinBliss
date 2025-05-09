@@ -1,0 +1,153 @@
+{% load static %}
+<!-- kodi i nvbarit -->
+<header>
+    <div class="transporti">
+
+      <!-- justify content perdoret per pozicionimin sipas boshtit te x
+       align items sipas boshtit te y 
+       vendos ikonat-->
+
+
+      Transporti në Tirane 100 Lekë, në rrethe 250 Lekë. Për porosi mbi 5000 Lekë transporti falas!
+
+    </div>
+
+
+
+    <!-- 
+  
+    -->
+
+    <nav class="navbar ngjyrabaze">
+      <div class="container-fluid  gjeresia ">
+        <a class="navbar-brand"> <img height="100px" width="200px" src="{% static 'images/skin bliss logo.png' %}"></a>
+        <form class="position-relative w-100" action="/search" method="get" role="search" style="max-width: 500px;">
+          <input type="text" class="form-control pe-5" name="q" placeholder="Kerko produktin..." aria-label="Search">
+          <!-- Search icon positioned on the right -->
+          <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
+        </form>
+
+        <a href="#" class="nav-icon" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <i class="bi bi-person-circle"></i>
+        </a>
+
+
+       <!-- Login/Register Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content ngjyrateksit">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login or Register</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body (Form) -->
+      <div class="modal-body">
+        <form>
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+
+          <!-- Password -->
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="custom-login-btn">Login</button>
+
+          <!-- Optional register link -->
+          <div class="mt-3 text-center">
+            <p>S'ke nje llogari? <a href="{% url 'loginPage'%}" class="registerbutton">Regjistrohu</a></p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+        <a href="#" class="nav-icon"><i class="bi bi-clipboard2-heart"></i></a>
+        <a href="#" class="nav-icon"><i class="bi bi-cart"></i></a>
+
+      </div>
+    </nav>
+
+
+    <div class="kategorite">
+      <ul class="nav justify-content-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Category 1</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Subcategory A</a></li>
+            <li><a class="dropdown-item" href="#">Subcategory B</a></li>
+            <li><a class="dropdown-item" href="#">Subcategory C</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Category 2</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Item 1</a></li>
+            <li><a class="dropdown-item" href="#">Item 2</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Category 2</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Item 1</a></li>
+            <li><a class="dropdown-item" href="#">Item 2</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Category 2</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Item 1</a></li>
+            <li><a class="dropdown-item" href="#">Item 2</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Category 2</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Item 1</a></li>
+            <li><a class="dropdown-item" href="#">Item 2</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Category 2</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Item 1</a></li>
+            <li><a class="dropdown-item" href="#">Item 2</a></li>
+          </ul>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Category 2</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Item 1</a></li>
+            <li><a class="dropdown-item" href="#">Item 2</a></li>
+          </ul>
+        </li>
+
+        <!-- Repeat for other items -->
+      </ul>
+    </div>
+
+  </header>
+

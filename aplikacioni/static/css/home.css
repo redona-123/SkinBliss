@@ -1,0 +1,250 @@
+
+
+  .transporti{
+   height: 50px;
+   text-align: center;
+   align-content: center;
+  }
+
+  
+
+  .ngjyrabaze{
+    background-color: rgb(250 234 234) ;
+ 
+  }
+
+  .gjeresia{
+    width: 80%;
+  }
+
+
+
+/* stilizimi i searchit tek navbari */
+input.form-control.pe-5 {
+  padding-right: 2.5rem; /* Make space for the icon */
+}
+
+input.form-control {
+  border-radius: 20px; /* Optional: rounded corners for input */
+}
+
+input.form-control::placeholder {
+  color: #888; /* Placeholder color */
+}
+
+
+/* Stilizimi i ikonave tek navbari */
+
+.nav-icon i {
+  font-size: 2rem;        /* Make icons bigger */
+  color: rgb(105 14 21);           /* Change icon color */
+  margin-right: 2px;        /* Control spacing between icons */
+}
+
+.nav-icon i:hover{
+
+  color: rgb(162, 74, 74);
+}
+
+
+
+.nav-icon:last-child i {
+  margin-right: 0;          /* Remove space after last icon */
+}
+
+
+.ngjyrateksit{
+  color: rgb(105 14 21);
+}
+
+.kategorite .nav-link {
+  color: rgb(105 14 21);
+  font-size: 1.1rem;
+}
+
+
+.kategorite .nav-link:hover {
+  color: rgb(162, 74, 74);
+}
+
+  /* stilizimi i karuselit, qe fotot te kene te njejtat permasa */
+
+
+  .carousel-item img {
+    height: 350px;         /* Set your desired height */
+    width: 100%;           /* Let Bootstrap handle the responsive width */
+    object-fit: cover;     /* Crop the image to fit the container without distortion */
+    border-radius: 2px;       /* Adds rounded corners for a polished look */
+  }
+
+/*Butonat e karuselit */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 8px;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+  border-radius: 50%; /* or use 8px for rounded rectangle */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* slightly darker on hover */
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+/* produktet me ulje karuseli */
+.carousel-wrapper {
+  width: 80%;
+  margin: 50px auto;
+}
+.carousel-title {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(105 14 21);
+}
+.carousel-underline {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(190, 177, 177);
+  margin: 10px 0 30px;
+}
+
+
+
+.carousel-item .card {
+  height: 100%;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem; /* space between cards */
+
+}
+ /* Responsive: Stack 2 cards per row on smaller screens */
+ @media (max-width: 768px) {
+  .card-container {
+    flex-direction: column; /* Stack cards vertically */
+  }
+}
+
+
+
+/* fotot me problematikat e lekures */
+
+.problematikat {
+  margin: 0; 
+  padding: 0; 
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 80%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+
+.underline {   /* e njejte me carousel-underline */
+  width: 100%;
+  height: 2px;
+  background-color: rgb(190, 177, 177);
+  margin: 10px 0 30px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: calc(25% - 11.25px); /* 4 per row */
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.image-wrapper .image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:  rgb(105 14 21); 
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.image-wrapper:hover .image-text {
+  color:rgb(162, 74, 74);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.image-wrapper a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .image-wrapper {
+    width: calc(50% - 7.5px); /* 2 per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-wrapper {
+    width: 100%; /* 1 per row */
+  }
+}
+
+/* stilizimi i butonave te modalit */
+
+.registerbutton , .custom-login-btn {
+  background-color:  white;;
+  color: rgb(105 14 21);
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+ .custom-login-btn:hover {
+  background-color:rgb(162, 74, 74);
+  cursor: pointer;
+}
+.registerbutton{
+  text-decoration: none;
+}
+
+.registerbutton:hover {
+  text-decoration: underline;}

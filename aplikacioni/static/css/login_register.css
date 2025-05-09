@@ -1,0 +1,148 @@
+
+.transporti{
+    height: 50px;
+    text-align: center;
+    align-content: center;
+   }
+ 
+   
+ 
+   .ngjyrabaze{
+     background-color: rgb(250 234 234) ;
+  
+   }
+ 
+   .gjeresia{
+     width: 80%;
+   }
+ 
+ 
+ 
+ /* stilizimi i searchit tek navbari */
+ input.form-control.pe-5 {
+   padding-right: 2.5rem; /* Make space for the icon */
+ }
+ 
+ input.form-control {
+   border-radius: 20px; /* Optional: rounded corners for input */
+ }
+ 
+ input.form-control::placeholder {
+   color: #888; /* Placeholder color */
+ }
+ 
+ 
+ /* Stilizimi i ikonave tek navbari */
+ 
+ .nav-icon i {
+   font-size: 2rem;        /* Make icons bigger */
+   color: rgb(105 14 21);           /* Change icon color */
+   margin-right: 2px;        /* Control spacing between icons */
+ }
+ 
+ .nav-icon i:hover{
+ 
+   color: rgb(162, 74, 74);
+ }
+ 
+ 
+ 
+ .nav-icon:last-child i {
+   margin-right: 0;          /* Remove space after last icon */
+ }
+ 
+ 
+ .ngjyrateksit{
+   color: rgb(105 14 21);
+ }
+ 
+ .kategorite .nav-link {
+   color: rgb(105 14 21);
+   font-size: 1.1rem;
+ }
+ 
+ .kategorite .nav-link:hover {
+   color: rgb(162, 74, 74);
+ }
+
+
+.regjistrimi{
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .form-container {
+    background: rgb(250 234 234);
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 450px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .checkbox-container {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox-container input {
+    margin-right: 10px;
+  }
+
+  button {
+    width: 100%;
+    background-color:rgb(105 14 21);;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: rgb(162, 74, 74);;
+  }
+
+  .message, .error {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .message {
+    color: rgb(198, 233, 198);
+  }
+
+  .error {
+    color: rgb(238, 189, 189);
+  }
+
+
+  
