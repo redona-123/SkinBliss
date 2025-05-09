@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import *
+from django.contrib import messages
 # Create your views here.
 
 def home(request):
@@ -24,10 +25,10 @@ def contact(request):
         infoComment = request.POST["comment"]
         if infoFirstName != "" and  infoLastName != "" and infoEmail != ""  and infoComment != "" :
             Contact(
-                Contact_firstName = infoFirstName,
-                Contact_lastName = infoLastName,
-                Contact_email = infoEmail,
-                Contact_comment = infoComment,
+                contact_firstName = infoFirstName,
+                contact_lastName = infoLastName,
+                contact_email = infoEmail,
+                contact_comment = infoComment,
                     
                 ) .save()
             messages.success(request, "Message sent!")
